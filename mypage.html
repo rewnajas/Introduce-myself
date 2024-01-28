@@ -1,0 +1,87 @@
+<HTML>
+<head>
+ <html lang=”en”>
+<head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+<title>Purinut Sukdee</title>
+<style>
+    img:hover {
+      transform: scaleX(-1);
+    }
+    body {
+      background-image: linear-gradient(to bottom right, #33475b, #0033CC, #FF77CC, rgb(255, 122, 89));
+      /* Additional Styling */
+      font-family: 'Lexend Deca', sans-serif;
+      width: 800px;
+      margin: auto;
+      padding-top: 30px;
+      color: white;
+    }
+.block {
+  position: relative;
+ 
+  width: 400px;
+  height: 320px;
+  background: linear-gradient(0deg, #000, #272727);
+}
+
+.block:before, .block:after {
+  content: '';
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+    #0000ff, #00ff00,#ffff00, #ff0000);
+  background-size: 400%;
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  z-index: -1;
+  animation: steam 20s linear infinite;
+}
+
+@keyframes steam {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+.block:after {
+  filter: blur(50px);
+}
+    </style>
+</head>
+<body bgcolor = “#000000”>
+<font color = “#FFBF00”>
+    <center>
+<H1>Introducing...</H1>
+<IMG SRC="./images/rew.jpg" width="25%">
+
+  <div class="block">
+<P>Purinut Sukdee</P>
+<P>6409610695</P>
+<P>Department of Computer Science</P>
+<P>Faculty of Science and Technology</P>
+<P>Thammasat University</P>
+<P>...Contact...</P>
+<P>Facebook : Rew Purinut</P>
+<P>Instagram : rew_na_jas</P>
+<P>Email : purinut.suk@dome.tu.ac.th</P></block>
+</div>
+
+<h2>My pet : Sugargilder <br></h2>
+  <video width="320" height="240" controls>
+    <source src="./VDOs/mypet.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+  </video> 
+</font>
+</center>
+</body>
+</HTML>
